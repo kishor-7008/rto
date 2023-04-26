@@ -1,0 +1,12 @@
+.flexPoint{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+.divClass{
+    color:white;
+    /* font-weight: bold; */
+}
+.head{
+    color:#99e421;
+}

@@ -1,0 +1,150 @@
+/* :root {
+    --background-left: #a8dadc;
+    --background-right: #e5989b;
+    --item-background: #adb5bd;
+    --item-background-left: #6c757d;
+    --item-background-top: #ced4da;
+    --low-background: #74c69d;
+    --low-background-left: #52b788;
+    --low-background-top: #95d5b2;
+    --medium-background: #ffa35c;
+    --medium-background-left: #ff9747;
+    --medium-background-top: #ffae70;
+    --high-background: #f92432;
+    --high-background-left: #e30613;
+    --high-background-top: #fa4c58;
+  }
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(
+      to right,
+      var(--background-left),
+      var(--background-right)
+    );
+    min-height: 100%;
+    display: flex;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #play {
+    margin-bottom: 40px;
+    font-size: 46px;
+    font-family: Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px #000;
+    cursor: pointer;
+  }
+  
+  #equalizer {
+    width: 30px;
+    margin-left: 30px;
+    list-style-type: none;
+  }
+  
+  #equalizer span {
+    display: block;
+    background-color: var(--item-background);
+    box-sizing: border-box;
+    height: 30px;
+    font-size: 20px;
+    font-family: Tahoma, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skewY(-15deg);
+    position: relative;
+    z-index: var(--index);
+    margin-bottom: 1px;
+    transition: all 0.2s;
+  }
+  
+  #equalizer span:last-child:after {
+    box-shadow: -85px 60px 30px rgba(0, 0, 0, 0.65);
+  }
+  
+  #equalizer span:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -30px;
+    top: 0;
+    transform-origin: right;
+    transform: skewY(30deg);
+    background-color: var(--item-background-left);
+    transition: all 0.2s;
+  }
+  
+  #equalizer span:after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    transform-origin: bottom;
+    transform: skewX(60deg) rotateX(30deg);
+    background-color: var(--item-background-top);
+    transition: all 0.2s;
+  }
+  
+  #equalizer span.active,
+  #equalizer span.active ~ span {
+    background-color: var(--low-background);
+  }
+  
+  #equalizer span.active:before,
+  #equalizer span.active ~ span:before {
+    background-color: var(--low-background-left);
+  }
+  
+  #equalizer span.active:after,
+  #equalizer span.active ~ span:after {
+    background-color: var(--low-background-top);
+  }
+  
+  #equalizer span.medium.active,
+  #equalizer span.medium.active ~ span.medium,
+  #equalizer span.high.active ~ span.medium {
+    background-color: var(--medium-background);
+  }
+  
+  #equalizer span.medium.active:before,
+  #equalizer span.medium.active ~ span.medium:before,
+  #equalizer span.high.active ~ span.medium:before {
+    background-color: var(--medium-background-left);
+  }
+  
+  #equalizer span.medium.active:after,
+  #equalizer span.medium.active ~ span.medium:after,
+  #equalizer span.high.active ~ span.medium:after {
+    background-color: var(--medium-background-top);
+  }
+  
+  #equalizer span.high.active,
+  #equalizer span.high.active ~ span.high {
+    background-color: var(--high-background);
+  }
+  
+  #equalizer span.high.active:before,
+  #equalizer span.high.active ~ span.high:before {
+    background-color: var(--high-background-left);
+  }
+  
+  #equalizer span.high.active:after,
+  #equalizer span.high.active ~ span.high:after {
+    background-color: var(--high-background-top);
+  }
+   */

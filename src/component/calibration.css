@@ -1,0 +1,33 @@
+body {
+	background-color: lightsteelblue;
+    
+}
+
+.hide {
+	display: none !important;
+}
+
+thead tr {
+	border-top: 5px solid lightcoral;
+}
+
+tr {
+	background-color: lightcoral;
+	border-bottom: 5px solid lightblue;
+	transition: all 0.3s linear;
+	/* &:hover {
+		background-color: lightblue !important;
+	} */
+}
+
+tr:not(.option) {
+	background-color: lightcyan;
+	/* &:hover {
+		background-color: lightcyan !important;
+	} */
+}
+
+.j{
+    width: 80%;
+   margin:auto
+}

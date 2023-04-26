@@ -1,0 +1,92 @@
+/* 
+:root {
+  --border-s: 0.2rem;
+  --border-m: 0.4rem;
+  --border-l: 0.8rem;
+  --border-xl: 1.5rem;
+}
+
+body {
+  background: #FFAFBD; 
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); 
+  font-family: sans-serif;
+}
+
+div {
+  display:flex;
+  width:100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+}
+
+button { 
+  width:4rem;
+  height:4rem;
+  margin:2rem;
+  border-radius:50%;
+  flex-shrink:0;
+  position:relative;
+  border:none;
+  background-color:#eee;
+  padding:0.7rem;
+  box-sizing:content-box;
+}
+
+button:before {
+  content: '';
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0; 
+  left:0;
+}
+
+.red {background-color: #E20000}
+.turq {background-color: #0099AF; background-image: linear-gradient(#0099AF, #009900)}
+.black {background-color: black; color:white;}
+
+
+.mask-image button {
+  border:none;
+  border-radius:50%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.mask-image button:before {
+  background-image:linear-gradient(to bottom, rgba(255,255,255,0.3) 30%, transparent 50%, rgba(0,0,0,0.4) 100%);
+  -webkit-mask-image: radial-gradient(closest-side, transparent calc(100% - var(--border-m)), black calc(100% - var(--border-m)), black 101%, transparent 101%);
+  mask-image: radial-gradient(closest-side, transparent calc(100% - var(--border-m)), black calc(100% - var(--border-m)), black 101%, transparent 101%); 
+}
+
+.css-vars button {
+  background: var(--bg-color);
+}
+
+.css-vars button:before {
+  content: '';
+  border-radius:50%;
+  position:absolute;
+  width: 100%; height:100%;
+  top: calc( var(--border-m) * -1);
+  left: calc( var(--border-m) * -1);
+  padding: var(--border-m);
+  background:
+    linear-gradient(to bottom, rgba(255,255,255,0.3) 30%, transparent 50%, rgba(0,0,0,0.4) 100%),
+    var(--bg-color);
+  z-index:-1;
+}
+
+.mask-image button.large:before {
+   -webkit-mask-image: radial-gradient(closest-side, transparent calc(100% - var(--border-l)), black calc(100% - var(--border-l)), black 101%, transparent 101%);
+  mask-image: radial-gradient(closest-side, transparent calc(100% - var(--border-l)), black calc(100% - var(--border-l)), black 101%, transparent 101%); 
+}
+
+.css-vars button.large:before {
+  top: calc( var(--border-l) * -1);
+  left: calc( var(--border-l) * -1);
+  padding: var(--border-l);
+}
+
+ */

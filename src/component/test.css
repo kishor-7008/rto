@@ -1,0 +1,116 @@
+
+  /* body {
+  background-color: black;
+  width: 99vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.card {
+  width: 300px;
+  height: 234px;
+  margin:15px;
+  background: #07182E;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card .headingS {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 130px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 183, 255)), to(rgb(255, 48, 255)));
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 155%;
+  -webkit-animation: rotBGimg 3s linear infinite;
+  animation: rotBGimg 3s linear infinite;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+@-webkit-keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotBGimg {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+
+.automation{
+ /* background:red; */
+ width:300px;
+ height:254px;
+ border-radius:50%;
+ /* background-color: blue; */
+background-image:url("https://cdn.dribbble.com/users/6261056/screenshots/14660465/media/a608639b24d21d75eae965deb1a9f797.gif");
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+}
+.report{
+  /* background:red; */
+  width:300px;
+  height:254px;
+  border-radius:50%;
+  /* background-color: blue; */
+ background-image:url("https://cdn.dribbble.com/users/1894420/screenshots/11700268/media/1ad21c9ccda8d2875edf5cfad781fd2d.gif");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+ }
+ .nonAutomation{
+  width:300px;
+  height:254px;
+  border-radius:50%;
+  /* background-color: blue; */
+ background-image:url("https://cdn.dribbble.com/users/1894420/screenshots/11700268/media/1ad21c9ccda8d2875edf5cfad781fd2d.gif");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+ }
